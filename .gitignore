@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+
+# Data
+data/raw/
+data/processed/
+
+# MLflow
+mlruns/
+
+# Models/artifacts
+models/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,17 @@
+name: DataMiningProject
+
+conda_env: environment.yml
+
+entry_points:
+  main:
+    parameters:
+      use_api: {type: bool, default: true}
+      start_date: {type: str, default: "2023-01-23"}
+      end_date: {type: str, default: "2026-04-22"}
+      variant_id: {type: int, default: 2}
+      data_path: {type: str, default: "data/raw/hnt_cabai_merah_keriting.csv"}
+      raw_output: {type: str, default: "data/raw/hnt_cabai_merah_keriting.csv"}
+      artifact_dir: {type: str, default: "artifacts"}
+      experiment_name: {type: str, default: "data_mining_experiment"}
+      target_column: {type: str, default: "harga"}
+    command: "python src/data_mining/train.py --use_api {use_api} --start_date {start_date} --end_date {end_date} --variant_id {variant_id} --data_path {data_path} --raw_output {raw_output} --artifact_dir {artifact_dir} --experiment_name {experiment_name} --target_column {target_column}"
