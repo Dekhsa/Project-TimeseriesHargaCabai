@@ -7,3 +7,4 @@ pyyaml
 pytest
 seaborn
 statsmodels
+streamlit
